@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMPLE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon__depedlogo.png">
+</head>
+
+<body>
+
+
+    <nav>   <!--https://www.youtube.com/watch?v=U8smiWQ8Seg&ab_channel=Coding2GO---For Tutorial in Navigation bar-->
+        <ul class="sidebar"> <!--SIDEBAR-->
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Issuances</a></li>
+            <li><a href="#">CSC Matters</a></li>
+            <li><a href="#">Others</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Downloadables</a></li>
+        </ul>
+        <ul> <!--HORIZONTAL-->
+            <li><a href="#">HOME</a></li>
+            <li ><a href="#">ABOUT US<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown_menu"> </div>
+                </li>
+            <li class="hideOnMobile"><a href="#">ISSUANCES</a></li>
+            <li class="hideOnMobile"><a href="#">CSC MATTERS</a></li>
+            <li><a href="#">OTHERS</a></li>
+            <li class="hideOnMobile"><a href="#">DOWNLOADABLES</a></li>
+            <li class="hideOnMobile"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+    <!----
+    <div class="overlapnav">
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">ISSUANCES</a>
+            <a href="#">CSC MATTERS</a>
+            <a href="#">OTHERS</a>
+            <a href="#">DOWNLOADABLES</a>
+        </nav>
+    </div> 
+--->
+  
+    <div>
+       <img src="/images/sdotarlacimg.png" width="100%">
+    </div>
+
+    <div>
+        <p class="depedbanner">DEPED LOGOs</p>
+    </div>
+
+    <div class="depedimages">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  class="arrow-left" height="28px"  fill="#062d70" viewBox="0 -960 960 960" width="28px"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></a>
+        <img class="hideonmobile1" src="/images/matatag.png" alt="depedmatatag" width="150px">
+        <img class="hideonmobile2" src="/images/Bagong-Pilipinas-Logo.png" alt="bagong pilipinas logo" width="150px" height="170px">
+        <img class="hideonmobile3" src="/images/favicon__depedlogo.png" alt="depedicon" width="150px" height="150px">
+        <img src="/images/transparency-seal.png" alt="transparencyicon" width="150px" height="150px">
+        <img src="/images/Department_of_Education.png" alt="depedlogo" width="150px" height="150px">
+        <img class="hideonmobile4" src="/images/PRIMEHRM.jpg" alt="prime logo" max-width="150px" height="150px">
+        <img class="hideonmobile5" src="/images/Civil_Service_Commission.svg.png" alt="csclogo" width="150px" height="150px">
+        <img class="hideonmobile6" src="/images/Www.philhealth.gov.ph.png" alt="philhealth logo"width="150px" height="120px">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="arrow-right" height="28px" fill="#062d70" viewBox="0 -960 960 960" width="28px"><path d="m310-53.67-89.33-89 338.66-338.66L220.67-820 310-909.33l427 428L310-53.67Z"/></svg></a>
+    </div>
+
+    <div>
+        <p class="aboutus">ABOUT US</p>
+    </div>
+
+    <div class="aboutuscontents1">
+        <img class="aboutus1" src="/images/PCTABLET VERSION 1.png" alt="our vision" width="450px" height="400px">
+        <img class="aboutus2" src="/images/PCTABLET VERSION 2.png" alt="our mission" width="450px" height="400px">
+    </div>
+
+    <div class="aboutuscontents2">
+        <img class="aboutus3" src="/images/PCTABLET VERSION 3.png" alt="our core values" width="450px" height="400px">
+        <img class="aboutus4" src="/images/PCTABLET VERSION 4.png" alt="our mandate" width="450px" height="400px">
+    </div>
+ 
+    <div>
+        <p class="depedbanner">LATEST NEWS AND ANNOUNCEMENT</p>
+    </div>
+
+    <div class="advisoryimg">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  class="arrow-left2" height="28px"  fill="#062d70" viewBox="0 -960 960 960" width="28px"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></a>
+        <img src="/images/advisory1.png" alt="advisory1" width="340px">
+        <img src="/images/advisory2.png" alt="advisory2" width="340px">
+        <img src="/images/advisory3.png" alt="advisory3" width="340px">
+        <img src="/images/advisory5.png" alt="advisory5" width="340px">
+        <img src="/images/advisory6.png" alt="advisory6" width="340px">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="arrow-right2" height="28px" fill="#062d70" viewBox="0 -960 960 960" width="28px"><path d="m310-53.67-89.33-89 338.66-338.66L220.67-820 310-909.33l427 428L310-53.67Z"/></svg></a>
+    </div>
+
+
+
+
+
+
+
+ 
+ 
+    <div class="footer">
+        <section>
+        <p class="footer1" padding-bottom="30px">OUR <span style="color:#db062c;font-weight:bold">CONTACT</span> INFORMATIONS</p>
+        </section>
+
+        <section class="footerattributes">
+        <p class="footer2"><img class="footerimg" src="images/LOCATION (recolor to yellow-orange).png" height="40px"> Macabulos Drive,
+            Brgy. San Roque, Tarlac City, Tarlac</p>
+        <p class="footer3"><img class="footerimg" src="images/CALL (recolor to yellow-orange).png" height="40px">(0945) <span style="color:#db062c;font-weight:bold">982 0345 </span> /
+            (0945)<span style="color:#db062c;font-weight:bold"> 982 0374</span></p>
+        <p class="footer4"><img class="footerimg" src="/images/EMAIL (recolor to yellow-orange).png" height="40px">tarlac@deped.gov.ph</p>
+    </section>
+        
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'etna-sanserif', sans-serif;
+}
+
+/* Navigation Bar horizontal start -- https://www.youtube.com/watch?v=U8smiWQ8Seg&ab_channel=Coding2GO -- For Tutorial CSS in Navigation bar*/
+
+nav {
+    background-color: #db062cCC;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+    /* ORIGINAL
+    display: flex;
+    justify-content: center;    
+    padding: 25px;
+    opacity: 0.8; */
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav li {
+    height: 60px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+ /*nav li:first-child{
+    margin-right: auto;
+} 
+/* Navigation Bar horizontal end */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0; 
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #ce2544;
+    backdrop-filter: blur(30px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 1250px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+nav a { 
+    color: white;
+    margin: auto;
+    text-decoration: none;
+    font-size: 20px;    
+}
+
+.depedbanner{
+    padding: 20px;
+    background-color: #db062c;
+    text-align: center;
+    font-family: 'norwester';
+    font-size: 30px;
+    color: white;
+    font-weight: 450;
+    margin-top: -10px;
+    text-shadow: 2px 2px #ff0000;
+    box-shadow: 0 10px rgba(250, 137, 137, 0.1);
+
+}
+
+.arrow-left {
+    fill: #062d70;
+    width: 35px;
+    height: 160px;
+}
+.arrow-right {
+    fill: #062d70;
+    width: 35px;
+    height: 160px;
+}
+
+.arrow-right2 {
+    fill: #062d70;
+    width: 50px;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+}
+.arrow-left2 {
+    fill: #062d70;
+    width: 50px;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+.depedimages {
+    padding-top: 15px;;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+
+@media(max-width: 1241px){
+    .hideonmobile1{
+        display: none;
+    }
+}
+
+@media (max-width: 1089px) {
+    .hideonmobile2{
+        display: none;
+    }
+}
+
+@media (max-width: 939px) {
+    .hideonmobile3{
+    display: none;
+}
+}
+
+
+@media (max-width: 789px){
+
+    .hideonmobile4{
+    display: none;
+}
+}
+
+
+@media (max-width: 679px){
+    .hideonmobile5{
+    display: none;
+}
+}
+
+@media (max-width: 591px){
+    .hideonmobile6{
+    display: none;
+}
+}
+
+ html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+ }
+
+ .aboutus {
+    padding: 20px;
+    background-color: #062d70;
+    text-align: center;
+    font-family: 'norwester';
+    font-size: 30px;
+    color: white;
+    font-weight: 450;
+    margin-top: -10px;
+    text-shadow: 2px 2px #274c86
+    
+ }
+ @font-face {
+    font-family: 'norwester';
+    src: url(/images/norwester.otf);
+}
+
+.aboutuscontents1 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E8E8E8;
+}
+
+.aboutuscontents2 {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E8E8E8;
+}
+
+.aboutus1 {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display: block;
+}
+.aboutus3 {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display: block;
+}
+
+@media (max-width: 905px){
+    .aboutuscontents1, .aboutuscontents2{
+        display: block;
+        text-align: center;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+}
+
+
+.advisoryimg {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+@font-face {
+    font-family: etna-sanserif;
+    src: url(/images/Etna-Sans-serif.otf);
+}
+@font-face {
+    font-family: canvasans-regular;
+    src: url(/images/CanvaSans-Regular9755562880743818424.2de.2de498afbe8ce167560d5df6489c2042.ttf);
+}
+.footer{
+    padding: 20px;
+    background-color: #062d70;
+    text-align: center;
+    font-family: 'canvasans-regular';
+    font-size: 30px;
+    color: white;
+    font-weight: 450;
+    margin-top: -10px;
+    text-shadow: 2px 2px #274c86
+}
+
+.footerimg {
+    padding-top: 10px;
+    margin-right: 14px; 
+    
+}
+
+.footerattributes {
+    font-size: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    float: center;
+    margin: auto;
+    justify-content: space-evenly;
+}
