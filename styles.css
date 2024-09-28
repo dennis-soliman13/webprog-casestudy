@@ -12,8 +12,9 @@ body{
 
 nav {
     background-color: #db062cCC;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.1)
+    
     /* ORIGINAL
     display: flex;
     justify-content: center;    
@@ -27,21 +28,25 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 
+
+
 nav li {
-    height: 60px;
+    height: 100px;
+    
 }
 
 nav a {
     height: 100%;
-    padding: 0 30px;
+    padding: 0 40px;
     text-decoration: none;
     display: flex;
     align-items: center;
     color: black;
-    
 }
+
 nav a:hover{
     background-color: #f0f0f0;
 }
@@ -94,22 +99,30 @@ nav a {
     color: white;
     margin: auto;
     text-decoration: none;
-    font-size: 20px;    
+    font-size: 24px;    
+}
+.imgheader{
+    justify-content: flex-start;
 }
 
-.depedbanner{
-    padding: 20px;
+.homepageimage {
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.depedbanner {
+    padding: 50px;
     background-color: #db062c;
     text-align: center;
     font-family: 'norwester';
-    font-size: 30px;
+    font-size: 50px;
     color: white;
     font-weight: 450;
     margin-top: -10px;
     text-shadow: 2px 2px #ff0000;
-    box-shadow: 0 10px rgba(250, 137, 137, 0.1);
-
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 .arrow-left {
     fill: #062d70;
@@ -127,22 +140,22 @@ nav a {
     width: 50px;
     height: 500px;
     display: flex;
-    justify-content: flex-start;
 }
 .arrow-left2 {
     fill: #062d70;
     width: 50px;
     height: 500px;
     display: flex;
-    justify-content: flex-end;
 }
 .depedimages {
     padding-top: 15px;;
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 15px;
+    background-color: #eff0f2;
 }
 
+ /* Remove logos as the website shrinks*/
 @media(max-width: 1241px){
     .hideonmobile1{
         display: none;
@@ -156,7 +169,7 @@ nav a {
 }
 
 @media (max-width: 939px) {
-    .hideonmobile3{
+    .hideonmobile4{
     display: none;
 }
 }
@@ -164,7 +177,7 @@ nav a {
 
 @media (max-width: 789px){
 
-    .hideonmobile4{
+    .hideonmobile6{
     display: none;
 }
 }
@@ -177,11 +190,12 @@ nav a {
 }
 
 @media (max-width: 591px){
-    .hideonmobile6{
+    .hideonmobile3{
     display: none;
 }
 }
 
+ /*remove white spaces around the website */
  html,body {
     width: 100%;
     height: 100%;
@@ -190,16 +204,17 @@ nav a {
     overflow-x: hidden;
  }
 
- .aboutus {
-    padding: 20px;
+ .aboutusbanner {
+    padding: 40px;
     background-color: #062d70;
     text-align: center;
     font-family: 'norwester';
-    font-size: 30px;
+    font-size: 50px;
     color: white;
     font-weight: 450;
     margin-top: -10px;
-    text-shadow: 2px 2px #274c86
+    text-shadow: 2px 2px #274c86;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     
  }
  @font-face {
@@ -207,35 +222,80 @@ nav a {
     src: url(/images/norwester.otf);
 }
 
-.aboutuscontents1 {
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #E8E8E8;
-}
-
-.aboutuscontents2 {
+.aboutuscontainer1 {
+    padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
-    background-color: #E8E8E8;
+    background-color: #eff0f2;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 0;
+       
 }
 
-.aboutus1 {
+.aboutuscontainer2 {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #eff0f2;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    margin: 0;
+    
+}
+
+.aboutusimg1 {
     padding-right: 20px;
     padding-bottom: 20px;
     display: block;
 }
-.aboutus3 {
+.aboutusimg3 {
     padding-right: 20px;
     padding-bottom: 20px;
     display: block;
 }
+
+/*laptop version*/
+@media (max-width: 588px){
+    .aboutusimg1, 
+    .aboutusimg2, 
+    .aboutusimg3, 
+    .aboutusimg4 {
+        width: 450px;
+        height: 400px;
+    }
+}
+
+/*mobile version aboutusimages will shrink*/
+@media (max-width: 425px){
+    .aboutusimg1, 
+    .aboutusimg2, 
+    .aboutusimg3, 
+    .aboutusimg4 {
+        width: 350px;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+
+
+
+
 
 @media (max-width: 905px){
-    .aboutuscontents1, .aboutuscontents2{
-        display: block;
+    .aboutuscontainer1, .aboutuscontainer2{
+        display: flex;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+
         padding-bottom: 30px;
         width: 100%;
     }
@@ -244,12 +304,68 @@ nav a {
 @media screen and (max-width: 600px){
 }
 
-
-.advisoryimg {
+.advisoryimage{
     display: flex;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #eff0f2;
     justify-content: space-between;
-    padding: 40px;
 }
+
+.hideonadvisory1,
+.hideonadvisory2,
+.hideonadvisory3,
+.hideonadvisory4,
+.hideonadvisory5 {
+    width: 340px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1790px){
+    .hideonadvisory5{
+        display: none;
+    }
+}
+@media (max-width: 1455px){
+    .hideonadvisory4{
+        display: none;
+    }
+}
+@media (max-width: 1117px){
+    .hideonadvisory3{
+        display: none;
+    }
+}
+@media (max-width: 771px){
+    .hideonadvisory1{
+        display: none;
+    }
+}
+/*shrinks the advisoryimage for mobile*/
+@media (max-width: 360px){
+    .hideonadvisory2{
+        width:  400px;
+        height: 380px;
+        margin: 0;
+        padding: 0;
+    }
+    .advisoryimage {
+        max-height: 400px;
+    }
+    .arrow-left2,
+    .arrow-right2{
+        height: 370px;
+        width: 30px;
+    }
+    
+
+}
+
+
+
+
+
 
 @font-face {
     font-family: etna-sanserif;
@@ -268,20 +384,145 @@ nav a {
     color: white;
     font-weight: 450;
     margin-top: -10px;
-    text-shadow: 2px 2px #274c86
-}
-
-.footerimg {
-    padding-top: 10px;
-    margin-right: 14px; 
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5)          
     
 }
 
+
+
+.footertext, #footertext3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footerimg {
+    align-items: center;
+   
+    padding: 10px
+}
+
+
+/* Footer media for mobile */
+@media (max-width:1114px){
+    .footerattributes{
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      
+    }
+    .footertext {
+        display: flex;
+        text-align: none;
+      
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footerimg{
+        transform: translate(-170px, 0px);
+    }
+    #footertext1{
+        transform: translate(-20px, -50px);
+    }
+    #footertext2{
+        transform: translate(30px, -50px);
+    }
+    #footertext3{
+        transform: translate(35px, -65px);
+        font-size: 20px;
+        text-align: initial;
+    }
+    }
+    @media (max-width:1114px){
+        .footerattributes{
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          
+        }
+        .footertext {
+            display: flex;
+            text-align: none;
+          
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .footerimg{
+            transform: translate(-170px, 0px);
+        }
+        #footertext1{
+            transform: translate(-20px, -50px);
+        }
+        #footertext2{
+            transform: translate(30px, -50px);
+        }
+        #footertext3{
+            transform: translate(35px, -65px);
+            font-size: 20px;
+            text-align: initial;
+        }
+        }
+
+
 .footerattributes {
+
     font-size: 20px;
+    padding-top: 15px;
     padding-bottom: 10px;
     display: flex;
-    float: center;
-    margin: auto;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+}
+
+/*   Tablet width query shrinks the banners and logo images */
+@media (max-width: 768px){
+    .depedbanner, .aboutusbanner {
+        padding: 30px;
+        font-size: 30px;
+}
+}
+@media (max-width: 425px){
+
+    #shrinklogo {
+        width: 120px;
+        height: 120px;
+        padding-bottom: 0px;
+        flex-shrink: 0;
+    }
+    .depedimages{
+        height: 130px;
+    }
+    .arrow-left, .arrow-right{
+        height: 120px
+    }
+}
+
+
+@media (max-width: 537px){
+
+    .nav li {
+        height: 70px;
+    }
+    nav a { 
+        color: white;
+        margin: auto;
+        text-decoration: none;
+        font-size: 18px;    
+    }
+    nav ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;    
+    }
+}
+
+/* LAPTOP SIZE */
+@media (max-width: 1024px){
+
+
+
+
 }
